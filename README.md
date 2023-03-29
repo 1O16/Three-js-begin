@@ -1,43 +1,9 @@
-# three-js-webpack
+Renderer
+Camera에 담긴 Scene을 웹사이트에 구현해줌
 
-Starter project for Three.JS. Configured with Webpack 4 as a bundler.
+Scene : 최상위 노드
+여러개의 3D 오브젝트와 빛, 배경색, 안개 등의 요소들을 포함하고있음
 
-Great and easy way to bootstrap your Three.JS project.
-
-## Development
-
-Clone the project and install dependencies:
-
-```bash
-git clone https://github.com/aakatev/three-js-webpack.git
-npm i
-```
-
-Start webpack development server:
-
-```bash
-npm run start
-```
-
-Webpack configuration is located in [`webpack.config.js`](webpack.config.js).
-
-## Deployment on GitHub Pages
-
-**Works with any other static website hosting too.**
-
-Bundle your code, and push it in your repo:
-
-```bash
-npm run build
-git add
-git commit -m"Deploying on GitHub Pages"
-git push
-```
-
-## Extra
-
-The code can be formated with prettier:
-
-```bash
-npm run format
-```
+Camera
+Scene에 담긴 부분만 렌더러에게 데이터를 넘기는 역할을 함
+시야각, 종횡비, 카메라 시작 끝 지점, 카메라 위치 등 설정 가능
